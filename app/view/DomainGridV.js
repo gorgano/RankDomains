@@ -4,7 +4,7 @@ Ext.define('Controller.view.DomainGridV', {
 
     flex: 1,
     
-    title: 'Domains',
+    title: 'Rank Domains',
     store: 'DomainS',
 
     columns: [
@@ -26,7 +26,7 @@ Ext.define('Controller.view.DomainGridV', {
             flex: 1,
             items: [
                 {
-                    icon: 'add',
+                    icon: './resources/images/check.jpg',
                     altText: 'Add',
                     tooltip: 'Up-vote!',
                     handler: function (grid, rowIndex, colIndex){
@@ -45,7 +45,7 @@ Ext.define('Controller.view.DomainGridV', {
                     }
                 },
                 {
-                    icon: 'minus',
+                    icon: './resources/images/delete.jpg',
                     altText: 'Minus',
                     tooltip: 'Down-Vote :(',
                     handler: function (grid, rowIndex, colIndex) {
