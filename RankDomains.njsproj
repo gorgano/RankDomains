@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>RankDomains</Name>
+    <RootNamespace>RankDomains</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6f24fca0-96b7-4386-89d2-5c870aed77b5</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="README.md" />
+    <Content Include="resources\.arch-internal-preview.css" />
+    <Content Include="resources\images\2004_Porsche_911_Carrera_type_997.jpg" />
+    <Content Include="resources\images\250px-2007_Audi_TT_Coupe.jpg" />
+    <Content Include="resources\images\250px-Audi_S5.jpg" />
+    <Content Include="resources\images\250px-BMW_M3_E92.jpg" />
+    <Content Include="resources\images\250px-Nissan_GT-R.jpg" />
+    <Content Include="resources\preview-ext-theme-neptune-fe725280-ac22-4a12-8541-def85cd03a75.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.js" />
+    <Compile Include="app\controller\DomainC.js" />
+    <Compile Include="app\model\DomainM.js" />
+    <Compile Include="app\store\DomainS.js" />
+    <Compile Include="app\view\DomainGridV.js" />
+    <Compile Include="app\view\MainView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\controller\" />
+    <Folder Include="app\model\" />
+    <Folder Include="app\store\" />
+    <Folder Include="app\view\" />
+    <Folder Include="resources\" />
+    <Folder Include="resources\images\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
